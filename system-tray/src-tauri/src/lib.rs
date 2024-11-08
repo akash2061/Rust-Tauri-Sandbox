@@ -4,6 +4,7 @@ mod tray;
 pub fn run() {
     tauri::Builder::default()
         .setup(|app| {
+            #[cfg(all(desktop))]
             tray::create_tray(app.handle())?;
             Ok(())
         })
