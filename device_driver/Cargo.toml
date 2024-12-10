@@ -2,6 +2,7 @@
 name = "device_driver"
 version = "0.1.0"
 edition = "2021"
+authors = ["akash2061 <aakashsoni8781@gmail.com>"]
 
 [dependencies]
 cortex-m = "0.7.7"
